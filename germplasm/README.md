@@ -1,0 +1,15 @@
+# Germplasm MCPD
+
+[Multi-Crop Passport Descriptors](https://www.bioversityinternational.org/e-library/publications/detail/faobioversity-multi-crop-passport-descriptors-v21-mcpd-v21/) is a widely used international standard to facilitate germplasm passport information exchange.
+
+## Tabs
+
+### DATA
+This tab contains all MCPD fields described in the document above. The only required field is `ACCENUMB`, all other fields are optional.
+Please check the MCPD standard for data formats and requirements.
+
+### ADDITIONAL_ATTRIBUTES
+This tab is used to store any kind of information that doesn't fit into the `DATA` sheet. Make sure to use the `ACCENUMB` column from the `DATA` spreadsheet to identify the germplasm and use the column headers for the attribute names. The individual cells then contain the attribute value.
+
+## Example
+Have a look at `example-germplasm-mcpd.xlsx` for an example of a completed sheet.
