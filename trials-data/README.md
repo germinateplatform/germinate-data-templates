@@ -7,7 +7,7 @@ This tab contains a subset of the [Dublin Core Metadata Initiative Terms](https:
 Note that `Title` and `Description` are required fields. These will be used to describe the dataset within Germinate.
 
 ### LOCATION
-This tab allows you to define (optional) geographic locations that you wish to associate with this dataset.
+This tab allows you to define (optional) geographic locations that you wish to associate with this dataset. If you wish to provide data from multiple sites, please use a separate copy of this template per location.
 
 ### COLLABORATORS
 Use this tab to define everyone who should be acknowledged for their contribution to this dataset. Please note that `First Name` and `Last Name` are required fields.

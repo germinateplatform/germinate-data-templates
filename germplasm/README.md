@@ -8,6 +8,8 @@
 This tab contains all MCPD fields described in the document above. The only required field is `ACCENUMB`, all other fields are optional.
 Please check the MCPD standard for data formats and requirements.
 
+Missing data should be represented by an empty cell (not `NA` or a dash (`-`) or anything else).
+
 ### ADDITIONAL_ATTRIBUTES
 This tab is used to store any kind of information that doesn't fit into the `DATA` sheet. Make sure to use the `ACCENUMB` column from the `DATA` spreadsheet to identify the germplasm and use the column headers for the attribute names. The individual cells then contain the attribute value.
 
