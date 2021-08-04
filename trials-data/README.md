@@ -6,21 +6,24 @@
 This tab contains a subset of the [Dublin Core Metadata Initiative Terms](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/). `LABEL` and `DEFINITION` provide information about the term, while `VALUE` is the column that should contain your data.
 Note that `Title` and `Description` are required fields. These will be used to describe the dataset within Germinate.
 
+### ATTRIBUTES
+Attributes allow you to define any additional information about the trial. This could be things like irrigation, fertiliser and pesticide information or any other management. Add one "attribute" per row. The type has to be either `int`, `float` or `char`.
+
 ### LOCATION
-This tab allows you to define (optional) geographic locations that you wish to associate with this dataset. If you wish to provide data from multiple sites, please use a separate copy of this template per location.
+This tab allows you to define (optional) geographic locations that you wish to associate with this dataset. If the trial has been conducted at different sites, please define them here and reference their `Name` in the `DATA` sheet column `Location`, otherwise leave the `Location` column in the `DATA` sheet empty.
 
 ### COLLABORATORS
 Use this tab to define everyone who should be acknowledged for their contribution to this dataset. Please note that `First Name` and `Last Name` are required fields.
 
 ### PHENOTYPES
-This is where the traits are defined. Note that only `Name` and `Data Type` are required fields. `Data Type` can only be one of these three options: `int`, `float`, `char`. If unsure, choose `char`. `Short Name` and `Unit Abbreviation` are both limited to 10 characters.
+This is where the traits are defined. Note that only `Name` and `Data Type` are required fields. `Data Type` can only be one of these four options: `numeric`, `categorical`, `date` and `text`. If unsure, choose `text`. `Short Name` and `Unit Abbreviation` are both limited to 10 characters.
 
 ### DATA
 This tab is used to define the actual trials data. Germplasm is defined as rows starting from `A2` downwards. Please use the `ACCENUMB` field from the germplasm MCPD standard to identify the material. Traits are defined as columns starting from `D2` to the right. Please use the value from the `Name` column of the `PHENOTYPES` sheet to identify the trait.
 
-The `Rep` and `Treatment` columns are optional. `Rep` can be used if you want to store data for individual replicates. This will create a "Plant/Plot" level entity in Germinate and the data will only indirectly be linked to the germplasm via this "Plant/Plot". You can also opt to use averages across the reps, which you would have to provide. In this case, leave the `Rep` column empty. The `Treatment` column can contain any free-text treatment description that has been applied to this individual.
+The `Rep`, `Treatment` and `Location` columns are optional. `Rep` can be used if you want to store data for individual replicates. This will create a "Plant/Plot" level entity in Germinate and the data will only indirectly be linked to the germplasm via this "Plant/Plot". You can also opt to use averages across the reps, which you would have to provide. In this case, leave the `Rep` column empty. The `Treatment` column can contain any free-text treatment description that has been applied to this individual. `Location` indicates the trial site. If this is a multi-site trial, this column is used to indicate which trial a data point originates from. Please declare all locations referenced in this column in the `LOCATION` sheet.
 
-Please do not remove the `Rep` and `Treatment` columns even if you're not providing any data for them.
+Please do not remove the `Rep`, `Treatment` or `Location` columns even if you're not providing any data for them.
 
 The data within each cell can be anything from integers, floating point numbers, text and dates. In the case of dates, we recommend to use the `YYYY-MM-DD` (e.g. 2020-01-02 for January 2nd 2020) date format.
 
