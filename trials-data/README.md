@@ -1,5 +1,11 @@
 # Trials data
 
+## Updates
+
+### 2021-08-25
+
+The way the `Rep` column is used has changed. Before Germinate would automatically generate Plant/Plot level germplasm for each rep. This will no longer happen. Please fill the column with `1` if you don't have any reps and use the rep number if you do.
+
 ## Tabs
 
 ### METADATA
@@ -21,7 +27,7 @@ This is where the traits are defined. Note that only `Name` and `Data Type` are 
 ### DATA
 This tab is used to define the actual trials data. Germplasm is defined as rows starting from `A2` downwards. Please use the `ACCENUMB` field from the germplasm MCPD standard to identify the material. Traits are defined as columns starting from `D2` to the right. Please use the value from the `Name` column of the `PHENOTYPES` sheet to identify the trait.
 
-The `Rep`, `Treatment` and `Location` columns are optional. `Rep` can be used if you want to store data for individual replicates. This will create a "Plant/Plot" level entity in Germinate and the data will only indirectly be linked to the germplasm via this "Plant/Plot". You can also opt to use averages across the reps, which you would have to provide. In this case, leave the `Rep` column empty. The `Treatment` column can contain any free-text treatment description that has been applied to this individual. `Location` indicates the trial site. If this is a multi-site trial, this column is used to indicate which trial a data point originates from. Please declare all locations referenced in this column in the `LOCATION` sheet.
+The `Rep`, `Treatment` and `Location` columns are optional. `Rep` can be used if you want to store data for individual replicates. If you don't have any reps, please fill this column with `1`. If left empty, we will store the row index as the rep to make sure the Line/Rep/Treatment combination is unique. The `Treatment` column can contain any free-text treatment description that has been applied to this individual. `Location` indicates the trial site. If this is a multi-site trial, this column is used to indicate which trial a data point originates from. Please declare all locations referenced in this column in the `LOCATION` sheet.
 
 Please do not remove the `Rep`, `Treatment` or `Location` columns even if you're not providing any data for them.
 
