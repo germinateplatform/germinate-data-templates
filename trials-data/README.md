@@ -13,7 +13,7 @@ This tab contains a subset of the [Dublin Core Metadata Initiative Terms](https:
 Note that `Title` and `Description` are required fields. These will be used to describe the dataset within Germinate.
 
 ### ATTRIBUTES
-Attributes allow you to define any additional information about the trial. This could be things like irrigation, fertiliser and pesticide information or any other management. Add one "attribute" per row. The type has to be either `int`, `float` or `char`.
+Attributes allow you to define any additional information about the trial. This could be things like irrigation, fertiliser and pesticide information or any other management. Add one "attribute" per row. The type has to be either `numeric`, `date`, `text` or `categorical`.
 
 ### LOCATION
 This tab allows you to define (optional) geographic locations that you wish to associate with this dataset. If the trial has been conducted at different sites, please define them here and reference their `Name` in the `DATA` sheet column `Location`, otherwise leave the `Location` column in the `DATA` sheet empty.

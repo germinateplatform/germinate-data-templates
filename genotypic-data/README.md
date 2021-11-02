@@ -32,3 +32,6 @@ For larger datasets, the format of the `DATA` tab can be reproduced in a plain .
 # map = Map name here
 # markerType = e.g. SNP
 ```
+
+## Hapmap format
+Starting from version 4.2.0, Germinate will support the upload of genotypic data in Hapmap format.
