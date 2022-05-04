@@ -4,6 +4,12 @@
 
 ## Tabs
 
+### METADATA
+This tab contains a subset of the [Dublin Core Metadata Initiative Terms](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/). `LABEL` and `DEFINITION` provide information about the term, while `VALUE` is the column that should contain your data.
+Note that `Title` and `Description` are required fields. These will be used to describe the data resource within Germinate.
+
+Additionally, the fields `Investigation Title`, `Investigation Description`, `Investigation unique ID`, `Associated data file link`, `Associated data file description` and `Associated data file version` are part of [MIAPPE](https://www.miappe.org/).
+
 ### DATA
 This tab contains all MCPD fields described in the document above. The only required field is `ACCENUMB`, all other fields are optional.
 Please check the MCPD standard for data formats and requirements.

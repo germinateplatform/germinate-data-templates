@@ -9,6 +9,8 @@ The plain text file is in the same format as the `DATA` tab in the Excel spreads
 This tab contains a subset of the [Dublin Core Metadata Initiative Terms](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/). `LABEL` and `DEFINITION` provide information about the term, while `VALUE` is the column that should contain your data.
 Note that `Title` and `Description` are required fields. These will be used to describe the dataset within Germinate.
 
+Additionally, the fields `Investigation Title`, `Investigation Description`, `Investigation unique ID`, `Associated data file link`, `Associated data file description` and `Associated data file version` are part of [MIAPPE](https://www.miappe.org/).
+
 `Map Name`, `Marker Technology`, `Genetic or Physical` and `Map Units` are used to create the map within Germinate.
 
 ### LOCATION

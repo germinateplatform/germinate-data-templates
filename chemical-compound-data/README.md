@@ -6,6 +6,8 @@
 This tab contains a subset of the [Dublin Core Metadata Initiative Terms](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/). `LABEL` and `DEFINITION` provide information about the term, while `VALUE` is the column that should contain your data.
 Note that `Title` and `Description` are required fields. These will be used to describe the dataset within Germinate.
 
+Additionally, the fields `Investigation Title`, `Investigation Description`, `Investigation unique ID`, `Associated data file link`, `Associated data file description` and `Associated data file version` are part of [MIAPPE](https://www.miappe.org/).
+
 ### LOCATION
 This tab allows you to define (optional) geographic locations that you wish to associate with this dataset.
 
