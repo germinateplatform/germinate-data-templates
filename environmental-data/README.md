@@ -9,7 +9,7 @@ Note that `Title` and `Description` are required fields. These will be used to d
 Additionally, the fields `Investigation Title`, `Investigation Description`, `Investigation unique ID`, `Associated data file link`, `Associated data file description` and `Associated data file version` are part of [MIAPPE](https://www.miappe.org/).
 
 ### ATTRIBUTES
-Attributes allow you to define any additional information about the environmental dataset. This could be things like irrigation, fertiliser and pesticide information or any other management. Add one "attribute" per row. The type has to be either `int`, `float` or `char`.
+Attributes allow you to define any additional information about the environmental dataset. This could be things like irrigation, fertiliser and pesticide information or any other management. Add one "attribute" per row. The type has to be either `numeric`, `date`, `text` or `categorical`.
 
 ### LOCATION
 This tab allows you to define (optional) geographic locations that you wish to associate with this dataset. If you wish to provide data from multiple sites, please use a separate copy of this template per location.
