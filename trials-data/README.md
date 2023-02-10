@@ -2,6 +2,10 @@
 
 ## Updates
 
+### 2023-02-10
+
+The `Rep` column is now required to contain a value. Even if you're not using reps, please fill the column with something like "1".
+
 ### 2021-08-25
 
 The way the `Rep` column is used has changed. Before Germinate would automatically generate Plant/Plot level germplasm for each rep. This will no longer happen. Please fill the column with `1` if you don't have any reps and use the rep number if you do.
@@ -29,7 +33,7 @@ This is where the traits are defined. Note that only `Name` and `Data Type` are 
 ### DATA
 This tab is used to define the actual trials data. Germplasm is defined as rows starting from `A2` downwards. Please use the `ACCENUMB` field from the germplasm MCPD standard to identify the material. Traits are defined as columns starting from `D2` to the right. Please use the value from the `Name` column of the `PHENOTYPES` sheet to identify the trait.
 
-The `Rep`, `Block`, `Treatment` and `Location` columns are optional. `Rep` and `Block` can be used if you want to store data for individual replicates. If you don't have any reps, please fill this column with `1`. If left empty, we will store the row index as the rep to make sure the Line/Rep/Block/Treatment combination is unique. The `Treatment` column can contain any free-text treatment description that has been applied to this individual. `Location` indicates the trial site. If this is a multi-site trial, this column is used to indicate which trial a data point originates from. Please declare all locations referenced in this column in the `LOCATION` sheet.
+The `Block`, `Row`, `Column`, `Treatment` and `Location` columns are optional. `Rep` and `Block` can be used if you want to store data for individual replicates. If you don't have any reps, please fill this column with `1`. `Row` and `Column` can be used to store the location within a trial. The `Treatment` column can contain any free-text treatment description that has been applied to this individual. `Location` indicates the trial site. If this is a multi-site trial, this column is used to indicate which trial a data point originates from. Please declare all locations referenced in this column in the `LOCATION` sheet.
 
 `Latitude`, `Longitude` and `Elevation` on the `DATA` sheet can be used to specify a more detailed location of where the data point has been collected/generated. This information will be used to plot the location of a germplasm within the trial on a map. Please note, that this is different from the locations specified on the `LOCATION` sheet, as these apply to the whole dataset, whereas the `Latitude`, `Longitude` and `Elevation` columns are associated with the data point itself.
 
